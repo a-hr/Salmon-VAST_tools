@@ -1,3 +1,7 @@
 # directories containing big tables and results
 **/data/*
 **/TPMs/*
+**/outputs/*
+
+# big files
+**/*.gz
