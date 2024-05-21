@@ -85,11 +85,13 @@ Starting from the `FASTQ` files, run `vast_align.sh` and then `vast_combine.sh` 
 
     After modifying the script with the required arguments, run it from RStudio by clicking the `Source` button.
 
+    > Make sure to activate the `salmon_env` environment in case you run this on the cluster. In local, just make sure you've installed `tidyverse` and `matrixStats` packages.
+
 3. Table and plot generation: finally, we can generate the table and plots with the `3_analysis.sh` script. The script requires the following arguments:
 
     - `input_table_filt`: Path to the coverage (and variance if done) filtered table.
     - `input_table_full`: Path to the full VAST-TOOLS output table.
-    - `design_tab`: Path to the file containing sample and group names.
+    - `design_tab`: Path to the file containing sample and group names. Expected columns are: `SampleName` and `GroupName`.
     - `group_A`: Exact name of group A (reference group) in `design.tab`.
     - `group_B`: Exact name of group B (contrast group) in `design.tab`.
     - `min_comparison_pct`: Minimum percentage of sample comparisons where minimum filtering conditions must be met in order to include an event.
@@ -101,5 +103,5 @@ Starting from the `FASTQ` files, run `vast_align.sh` and then `vast_combine.sh` 
     bash 3_analysis.sh
     ```
 
-    > Make sure to activate the `AS-env` environment before running the script.
+    > Make sure to activate the `vast_env` environment before running the script.
 

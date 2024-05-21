@@ -256,8 +256,8 @@ psi_table.to_csv("tables/PSI_TABLE.tab", sep="\t", index=False)
 # Select samples for pair-wise comparisons
 groups = pandas.read_csv(design_tab, sep="\t")
 
-SAMPLES_A = groups[groups["GroupName"].str.contains(f"{group_A}")]["CGGA_ID"].tolist()
-SAMPLES_B = groups[groups["GroupName"].str.contains(f"{group_B}")]["CGGA_ID"].tolist()
+SAMPLES_A = groups[groups["GroupName"].str.contains(f"{group_A}")]["SampleName"].tolist()
+SAMPLES_B = groups[groups["GroupName"].str.contains(f"{group_B}")]["SampleName"].tolist()
 SAMPLES = SAMPLES_A + SAMPLES_B
 
 # Generate a list of pair-wise comparisons
