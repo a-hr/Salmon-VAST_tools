@@ -1,0 +1,15 @@
+name: AS_env
+channels:
+  - conda-forge
+dependencies:
+  - pandas
+  - numpy
+  - plotly
+  - seaborn
+  - matplotlib
+  - scipy
+  - python-kaleido
+  - ca-certificates
+  - certifi
+  - openssl
+prefix: ~/miniforge3/envs/AS_env
