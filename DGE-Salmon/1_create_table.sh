@@ -16,7 +16,6 @@ outname="BIOD"
 
 Rscript GetSalmonTPMs.R \
     $metric \
-    $PWD \
     $outputDir \
     $designFile \
     $gtf \

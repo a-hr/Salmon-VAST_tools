@@ -1,25 +1,16 @@
 require("tidyverse")
 require("tximport")
 require("rtracklayer")
-require("BiocParallel")
-
-paramMulti <- MulticoreParam(workers = 10)
-paramSerial <- SerialParam()
-register(paramSerial)
-
 
 args = commandArgs(trailingOnly=TRUE)
 if (length(args)==0) {
   stop("Provide a metric to extract TPM counts", call.=FALSE)
 }
 
-project_dir <- args[2]
-salmon_out <- args[3]
-design_tab <- args[4]
-gtf <- args[5]
-outname <- args[6]
-
-setwd(project_dir)
+salmon_out <- args[2]
+design_tab <- args[3]
+gtf <- args[4]
+outname <- args[5]
 
 # Prepare annotation ------------------------------------------------------
 
@@ -60,13 +51,13 @@ design <- read_delim(
     trim_ws = TRUE
 )
 
-files <- file.path(project_dir, salmon_out, design$SampleName , "quant.sf")
+files <- file.path(salmon_out, design$SampleName , "quant.sf")
 names(files) <- paste0(design$SampleName)
 
 # Prepare counts ----------------------------------------------------------
 
 # Raw TPM counts
-txi.inf <- tximport(files, type = "salmon", tx2gene = transcripts, dropInfReps=TRUE, countsFromAbundance=args[1])
+txi.inf <- tximport(files, type = "salmon", tx2gene = transcripts, dropInfReps=TRUE, countsFromAbundance=args[1], ignoreAfterBar=TRUE)
 counts_df <- txi.inf$counts %>%
   as.data.frame() %>%
   rownames_to_column("GENEID") %>%
