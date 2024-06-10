@@ -38,7 +38,7 @@ conda env create -p /scratch/heral/envs/vast_env -f vast_env.yml
     sbatch 1_create_table.sh
     ```
 
-2. Once the TPM matrix is generated, we can perform the differential expression analysis with the `2_DiffExpressionAnalysis.R` script. The script requires the following arguments, which can be modified in the script itself:
+2. Once the TPM matrix is generated, we can perform the differential expression analysis with the `2_DiffExpressionAnalysis.R` script. **Recommended to run in local.** The script requires the following arguments, which can be modified in the script itself:
    
     - `project_dir`: Directory where the output files will be saved.
     - `gtf_file`: Path to the GTF file.
@@ -53,6 +53,8 @@ conda env create -p /scratch/heral/envs/vast_env -f vast_env.yml
 
     After modifying the script with the required arguments, it can be run by clicking the `Source` button in RStudio.
 
+    > Make sure to provide all of the paths as ABSOLUTE paths.
+    
 3. All the output files will be saved in the `project_dir/$metric_$group_b_vs_$group_a` directory.
 
 ## Alternative splicing analysis with VAST-TOOLS
