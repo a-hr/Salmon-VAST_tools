@@ -1,0 +1,424 @@
+-bash-4.2$ conda activate envs/DGE_analysis/
+(DGE_analysis) -bash-4.2$ mamba install -c bioconda r-pheatmap bioconductor-apeglm  bioconductor-vsn  r-gprofiler2  bioconductor-deseq2 r-factoextra r-sleuth bioconductor-tximport
+
+                  __    __    __    __
+                 /  \  /  \  /  \  /  \
+                /    \/    \/    \/    \
+███████████████/  /██/  /██/  /██/  /████████████████████████
+              /  / \   / \   / \   / \  \____
+             /  /   \_/   \_/   \_/   \    o \__,
+            / _/                       \_____/  `
+            |/
+        ███╗   ███╗ █████╗ ███╗   ███╗██████╗  █████╗
+        ████╗ ████║██╔══██╗████╗ ████║██╔══██╗██╔══██╗
+        ██╔████╔██║███████║██╔████╔██║██████╔╝███████║
+        ██║╚██╔╝██║██╔══██║██║╚██╔╝██║██╔══██╗██╔══██║
+        ██║ ╚═╝ ██║██║  ██║██║ ╚═╝ ██║██████╔╝██║  ██║
+        ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═════╝ ╚═╝  ╚═╝
+
+        mamba (1.4.2) supported by @QuantStack
+
+        GitHub:  https://github.com/mamba-org/mamba
+        Twitter: https://twitter.com/QuantStack
+
+█████████████████████████████████████████████████████████████
+
+
+Looking for: ['r-pheatmap', 'bioconductor-apeglm', 'bioconductor-vsn', 'r-gprofiler2', 'bioconductor-deseq2', 'r-factoextra', 'r-sleuth', 'bioconductor-tximport']
+
+bioconda/linux-64                                  @   3.3MB/s  1.8s
+bioconda/noarch                                      5.3MB @   2.7MB/s  2.0s
+pkgs/r/noarch                                                 No change
+pkgs/main/linux-64                                 @   3.5MB/s  2.0s
+pkgs/main/noarch                                              No change
+pkgs/r/linux-64                                               No change
+conda-forge/noarch                                  17.3MB @   4.2MB/s  4.2s
+conda-forge/linux-64                               @   5.2MB/s  8.2s
+
+Pinned packages:
+  - python 3.10.*
+
+
+Transaction
+
+  Prefix: /scratch/blazqul/envs/DGE_analysis
+
+  Updating specs:
+
+   - r-pheatmap
+   - bioconductor-apeglm
+   - bioconductor-vsn
+   - r-gprofiler2
+   - bioconductor-deseq2
+   - r-factoextra
+   - r-sleuth
+   - bioconductor-tximport
+   - ca-certificates
+   - certifi
+   - openssl
+
+
+  Package                           Version  Build             Channel                    Size
+────────────────────────────────────────────────────────────────────────────────────────────────
+  Install:
+────────────────────────────────────────────────────────────────────────────────────────────────
+
+  + aws-c-auth                       0.7.20  h5f1c8d9_0        conda-forge/linux-64      106kB
+  + aws-c-cal                        0.6.12  h2ba76a8_0        conda-forge/linux-64       47kB
+  + aws-c-common                     0.9.17  h4ab18f5_0        conda-forge/linux-64      228kB
+  + aws-c-compression                0.2.18  h36a0aea_4        conda-forge/linux-64       19kB
+  + aws-c-event-stream                0.4.2  h161de36_10       conda-forge/linux-64       54kB
+  + aws-c-http                        0.8.1  h63f54a0_13       conda-forge/linux-64      195kB
+  + aws-c-io                         0.14.8  h96d4d28_0        conda-forge/linux-64      158kB
+  + aws-c-mqtt                       0.10.4  hcc7299c_2        conda-forge/linux-64      164kB
+  + aws-c-s3                          0.5.9  h10bd90f_0        conda-forge/linux-64      110kB
+  + aws-c-sdkutils                   0.1.16  h36a0aea_0        conda-forge/linux-64       55kB
+  + aws-checksums                    0.1.18  h36a0aea_4        conda-forge/linux-64       50kB
+  + aws-crt-cpp                      0.26.8  h4f3a3cc_11       conda-forge/linux-64      340kB
+  + aws-sdk-cpp                    1.11.267  h51dfee4_8        conda-forge/linux-64        4MB
+  + bioconductor-affy                1.80.0  r43ha9d7317_1     bioconda/linux-64           2MB
+  + bioconductor-affyio              1.72.0  r43ha9d7317_1     bioconda/linux-64         124kB
+  + bioconductor-apeglm              1.24.0  r43hf17093f_1     bioconda/linux-64        Cached
+  + bioconductor-deseq2              1.42.0  r43hf17093f_2     bioconda/linux-64           3MB
+  + bioconductor-limma               3.58.1  r43ha9d7317_1     bioconda/linux-64           3MB
+  + bioconductor-preprocesscore      1.64.0  r43ha9d7317_2     bioconda/linux-64         200kB
+  + bioconductor-rhdf5               2.46.1  r43hf17093f_1     bioconda/linux-64           3MB
+  + bioconductor-rhdf5filters        1.14.1  r43hf17093f_1     bioconda/linux-64         573kB
+  + bioconductor-rhdf5lib            1.24.0  r43ha9d7317_2     bioconda/linux-64           4MB
+  + bioconductor-vsn                 3.70.0  r43ha9d7317_1     bioconda/linux-64           2MB
+  + gflags                            2.2.2  he1b5a44_1004     conda-forge/linux-64      117kB
+  + glog                              0.7.0  hed5481d_0        conda-forge/linux-64      144kB
+  + libabseil                    20240116.2  cxx17_h59595ed_0  conda-forge/linux-64        1MB
+  + libarrow                         14.0.2  hefa796f_19_cpu   conda-forge/linux-64        8MB
+  + libarrow-acero                   14.0.2  hbabe93e_19_cpu   conda-forge/linux-64      581kB
+  + libarrow-dataset                 14.0.2  hbabe93e_19_cpu   conda-forge/linux-64      584kB
+  + libarrow-substrait               14.0.2  he4f5ca8_19_cpu   conda-forge/linux-64      521kB
+  + libcrc32c                         1.1.2  h9c3ff4c_0        conda-forge/linux-64       20kB
+  + libevent                         2.1.12  hf998b51_1        conda-forge/linux-64     Cached
+  + libgoogle-cloud                  2.23.0  h9be4e54_1        conda-forge/linux-64        1MB
+  + libgoogle-cloud-storage          2.23.0  hc7a4891_1        conda-forge/linux-64      753kB
+  + libgrpc                          1.62.2  h15f2491_0        conda-forge/linux-64        7MB
+  + libparquet                       14.0.2  hacf5a1f_19_cpu   conda-forge/linux-64        1MB
+  + libprotobuf                      4.25.3  h08a7969_0        conda-forge/linux-64        3MB
+  + libre2-11                    2023.09.01  h5a48ba9_2        conda-forge/linux-64      233kB
+  + libthrift                        0.19.0  hb90f79a_1        conda-forge/linux-64      409kB
+  + libutf8proc                       2.8.0  h166bdaf_0        conda-forge/linux-64      101kB
+  + lz4-c                             1.9.4  hcb278e6_0        conda-forge/linux-64     Cached
+  + nlopt                             2.7.1  py310h236f06b_5   conda-forge/linux-64      398kB
+  + orc                               2.0.0  h17fec99_1        conda-forge/linux-64        1MB
+  + r-aggregation                     1.0.1  r43hc72bb7e_1004  conda-forge/noarch         33kB
+  + r-arrow                          14.0.1  r43h59595ed_0     conda-forge/linux-64        4MB
+  + r-ashr                           2.2_63  r43ha503ecb_0     conda-forge/linux-64     Cached
+  + r-bbmle                        1.0.25.1  r43hc72bb7e_0     conda-forge/noarch       Cached
+  + r-bdsmatrix                       1.3_7  r43h57805ef_0     conda-forge/linux-64     Cached
+  + r-biocmanager                   1.30.23  r43hc72bb7e_0     conda-forge/noarch        485kB
+  + r-car                             3.1_2  r43hc72bb7e_1     conda-forge/noarch          2MB
+  + r-cardata                         3.0_5  r43hc72bb7e_2     conda-forge/noarch          2MB
+  + r-coda                         0.19_4.1  r43hc72bb7e_0     conda-forge/noarch       Cached
+  + r-conquer                         1.3.3  r43h08d816e_2     conda-forge/linux-64      537kB
+  + r-corrplot                         0.92  r43hc72bb7e_2     conda-forge/noarch          4MB
+  + r-cowplot                         1.1.3  r43hc72bb7e_0     conda-forge/noarch          1MB
+  + r-crosstalk                       1.2.1  r43hc72bb7e_0     conda-forge/noarch       Cached
+  + r-dendextend                     1.17.1  r43hc72bb7e_1     conda-forge/noarch          4MB
+  + r-dt                               0.33  r43hc72bb7e_0     conda-forge/noarch          1MB
+  + r-ellipse                         0.5.0  r43hc72bb7e_0     conda-forge/noarch        234kB
+  + r-emdbook                        1.3.13  r43hc72bb7e_0     conda-forge/noarch       Cached
+  + r-emmeans                        1.10.2  r43hc72bb7e_0     conda-forge/noarch          2MB
+  + r-estimability                      1.5  r43hc72bb7e_0     conda-forge/linux-64       67kB
+  + r-etrunct                           0.1  r43hc72bb7e_1005  conda-forge/noarch       Cached
+  + r-factoextra                      1.0.7  r43hc72bb7e_3     conda-forge/noarch        428kB
+  + r-factominer                       2.10  r43h57805ef_0     conda-forge/linux-64        4MB
+  + r-flashclust                     1.01_2  r43h61816a4_1008  conda-forge/linux-64       41kB
+  + r-ggpubr                          0.6.0  r43hc72bb7e_1     conda-forge/noarch          2MB
+  + r-ggrepel                         0.9.5  r43ha503ecb_0     conda-forge/linux-64      271kB
+  + r-ggsci                           3.1.0  r43hc72bb7e_0     conda-forge/noarch          2MB
+  + r-ggsignif                        0.6.4  r43hc72bb7e_1     conda-forge/noarch        572kB
+  + r-gprofiler2                      0.2.3  r43hc72bb7e_0     conda-forge/noarch       Cached
+  + r-gridextra                         2.3  r43hc72bb7e_1005  conda-forge/noarch       Cached
+  + r-invgamma                          1.1  r43hc72bb7e_3     conda-forge/noarch       Cached
+  + r-irlba                         2.3.5.1  r43h316c678_2     conda-forge/linux-64      307kB
+  + r-leaps                             3.1  r43h61816a4_4     conda-forge/linux-64       97kB
+  + r-lme4                         1.1_35.3  r43ha503ecb_0     conda-forge/linux-64        4MB
+  + r-locfit                        1.5_9.9  r43h57805ef_0     conda-forge/linux-64     Cached
+  + r-maptools                        1.1_8  r43h57805ef_0     conda-forge/linux-64        2MB
+  + r-matrixmodels                    0.5_3  r43hc72bb7e_0     conda-forge/noarch        390kB
+  + r-minqa                           1.2.7  r43h4a74c7a_0     conda-forge/linux-64      143kB
+  + r-mixsqp                         0.3_54  r43h08d816e_0     conda-forge/linux-64     Cached
+  + r-multcompview                   0.1_10  r43hc72bb7e_0     conda-forge/noarch        132kB
+  + r-mvtnorm                         1.2_5  r43hc29710b_0     conda-forge/linux-64      765kB
+  + r-nloptr                          2.0.3  r43hcf54a89_2     conda-forge/linux-64      412kB
+  + r-pbkrtest                        0.5.2  r43hc72bb7e_1     conda-forge/noarch        195kB
+  + r-pheatmap                       1.0.12  r43hc72bb7e_4     conda-forge/noarch         91kB
+  + r-plotly                         4.10.4  r43hc72bb7e_0     conda-forge/noarch       Cached
+  + r-polynom                         1.4_1  r43hc72bb7e_2     conda-forge/noarch        396kB
+  + r-quantreg                         5.98  r43hc29710b_0     conda-forge/linux-64        2MB
+  + r-r.methodss3                     1.8.2  r43hc72bb7e_2     conda-forge/noarch         97kB
+  + r-r.oo                           1.26.0  r43hc72bb7e_0     conda-forge/noarch        975kB
+  + r-r.utils                        2.12.3  r43hc72bb7e_0     conda-forge/noarch          1MB
+  + r-rcpparmadillo              0.12.8.4.0  r43h58a4165_0     conda-forge/linux-64      916kB
+  + r-rcppnumerical                   0.6_0  r43ha503ecb_0     conda-forge/linux-64     Cached
+  + r-rio                             1.1.1  r43hc72bb7e_0     conda-forge/noarch        563kB
+  + r-rstatix                         0.7.2  r43hc72bb7e_1     conda-forge/noarch        616kB
+  + r-scatterplot3d                  0.3_44  r43h785f33e_1     conda-forge/noarch        361kB
+  + r-sleuth                         0.30.1  r43hdfd78af_1     bioconda/noarch           412kB
+  + r-sp                              2.1_4  r43hb1dbf0f_0     conda-forge/linux-64        2MB
+  + r-sparsem                          1.83  r43hbcb9c34_0     conda-forge/linux-64      804kB
+  + r-statmod                         1.5.0  r43hd8f1df9_1     conda-forge/linux-64      313kB
+  + r-truncnorm                       1.0_9  r43h57805ef_1     conda-forge/linux-64     Cached
+  + r-viridis                         0.6.5  r43hc72bb7e_0     conda-forge/noarch          3MB
+  + r-writexl                         1.5.0  r43h57805ef_0     conda-forge/linux-64      140kB
+  + re2                          2023.09.01  h7f4b329_2        conda-forge/linux-64       27kB
+  + s2n                              1.4.13  he19d79f_0        conda-forge/linux-64      347kB
+  + snappy                            1.2.0  hdb0a2a9_1        conda-forge/linux-64       42kB
+
+  Upgrade:
+────────────────────────────────────────────────────────────────────────────────────────────────
+
+  - ca-certificates               2024.3.11  h06a4308_0        pkgs/main
+  + ca-certificates                2024.6.2  hbcca054_0        conda-forge/linux-64     Cached
+  - openssl                           3.2.1  hd590300_1        conda-forge
+  + openssl                           3.3.1  h4ab18f5_0        conda-forge/linux-64     Cached
+
+  Summary:
+
+  Install: 107 packages
+  Upgrade: 2 packages
+
+  Total download: 102MB
+
+────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+Confirm changes: [Y/n]
+r-pheatmap                                          91.0kB @ 392.8kB/s  0.2s
+r-multcompview                                     132.0kB @ 531.2kB/s  0.2s
+r-aggregation                                       33.5kB @ 107.9kB/s  0.3s
+r-scatterplot3d                                    361.5kB @ 974.6kB/s  0.4s
+r-ellipse                                          234.2kB @ 564.5kB/s  0.4s
+r-r.methodss3                                       96.9kB @ 222.7kB/s  0.2s
+r-ggrepel                                          271.5kB @ 564.3kB/s  0.1s
+r-r.oo                                             974.9kB @   2.0MB/s  0.2s
+r-statmod                                          312.7kB @ 573.5kB/s  0.1s
+r-estimability                                      67.3kB @ 120.1kB/s  0.1s
+r-cardata                                            1.8MB @   3.2MB/s  0.3s
+r-irlba                                            306.7kB @ 529.7kB/s  0.1s
+aws-c-common                                       227.8kB @ 330.2kB/s  0.1s
+libcrc32c                                           20.4kB @  29.5kB/s  0.1s
+r-conquer                                          536.7kB @ 773.4kB/s  0.1s
+r-minqa                                            143.5kB @ 195.1kB/s  0.3s
+glog                                               143.6kB @ 186.0kB/s  0.1s
+aws-c-cal                                           46.5kB @  58.3kB/s  0.1s
+re2                                                 26.6kB @  31.8kB/s  0.1s
+r-maptools                                           1.8MB @   2.1MB/s  0.3s
+s2n                                                346.7kB @ 389.5kB/s  0.2s
+libgoogle-cloud                                      1.2MB @   1.3MB/s  0.1s
+libgoogle-cloud-storage                            752.7kB @ 779.1kB/s  0.2s
+libparquet                                           1.2MB @   1.2MB/s  0.1s
+r-arrow                                              3.6MB @   3.4MB/s  0.2s
+aws-sdk-cpp                                          3.6MB @   3.3MB/s  0.2s
+bioconductor-preprocesscore                        199.8kB @ 180.2kB/s  0.2s
+r-factoextra                                       427.6kB @ 341.8kB/s  0.1s
+r-car                                                1.7MB @   1.3MB/s  0.2s
+r-emmeans                                            2.1MB @   1.6MB/s  0.3s
+r-polynom                                          396.2kB @ 289.0kB/s  0.1s
+r-sleuth                                           411.8kB @ 286.4kB/s  0.4s
+r-viridis                                            3.0MB @   2.1MB/s  0.2s
+bioconductor-affy                                    1.6MB @   1.1MB/s  0.5s
+r-matrixmodels                                     389.6kB @ 266.4kB/s  0.2s
+r-flashclust                                        40.5kB @  27.0kB/s  0.1s
+r-mvtnorm                                          764.5kB @ 490.7kB/s  0.1s
+nlopt                                              398.2kB @ 249.6kB/s  0.1s
+r-nloptr                                           411.6kB @ 257.8kB/s  0.1s
+r-writexl                                          139.9kB @  87.6kB/s  0.1s
+aws-checksums                                       50.2kB @  30.7kB/s  0.1s
+aws-c-event-stream                                  53.8kB @  32.1kB/s  0.1s
+r-quantreg                                           1.6MB @ 934.3kB/s  0.1s
+libthrift                                          409.4kB @ 242.8kB/s  0.1s
+aws-c-io                                           158.0kB @  92.3kB/s  0.1s
+libarrow-substrait                                 521.1kB @ 285.5kB/s  0.2s
+r-rstatix                                          615.9kB @ 333.4kB/s  0.1s
+bioconductor-limma                                   3.1MB @   1.7MB/s  0.2s
+bioconductor-rhdf5filters                          572.6kB @ 303.8kB/s  0.2s
+libarrow                                             8.1MB @   4.1MB/s  0.3s
+r-leaps                                             97.0kB @  48.9kB/s  0.1s
+r-cowplot                                            1.3MB @ 645.8kB/s  0.2s
+r-dt                                                 1.4MB @ 697.9kB/s  0.2s
+r-factominer                                         3.8MB @   1.8MB/s  0.3s
+aws-c-sdkutils                                      54.9kB @  25.7kB/s  0.1s
+aws-c-http                                         195.2kB @  89.2kB/s  0.1s
+r-sp                                                 1.7MB @ 777.3kB/s  0.2s
+libabseil                                            1.3MB @ 566.7kB/s  0.3s
+r-lme4                                               4.3MB @   1.9MB/s  0.2s
+bioconductor-rhdf5                                   3.1MB @   1.3MB/s  0.1s
+libarrow-dataset                                   584.5kB @ 249.5kB/s  0.2s
+r-biocmanager                                      484.8kB @ 206.9kB/s  0.1s
+r-sparsem                                          804.1kB @ 324.4kB/s  0.1s
+r-rio                                              563.4kB @ 225.9kB/s  0.3s
+r-rcpparmadillo                                    916.4kB @ 367.2kB/s  0.2s
+aws-c-s3                                           109.8kB @  44.0kB/s  0.4s
+aws-c-mqtt                                         164.1kB @  62.4kB/s  0.1s
+bioconductor-affyio                                123.5kB @  46.2kB/s  0.2s
+libprotobuf                                          2.8MB @   1.0MB/s  0.2s
+libutf8proc                                        101.1kB @  36.4kB/s  0.1s
+r-corrplot                                           3.8MB @   1.4MB/s  0.5s
+libgrpc                                              7.3MB @   2.6MB/s  0.3s
+r-ggsci                                              2.2MB @ 780.2kB/s  0.1s
+libre2-11                                          232.6kB @  81.2kB/s  0.1s
+aws-c-compression                                   19.2kB @   6.7kB/s  0.1s
+libarrow-acero                                     580.7kB @ 197.5kB/s  0.2s
+bioconductor-deseq2                                  2.8MB @ 936.4kB/s  0.2s
+orc                                                  1.0MB @ 339.4kB/s  0.2s
+r-r.utils                                            1.4MB @ 457.3kB/s  0.2s
+r-ggsignif                                         572.1kB @ 184.8kB/s  0.1s
+bioconductor-rhdf5lib                                4.1MB @   1.3MB/s  0.2s
+gflags                                             116.5kB @  37.0kB/s  0.1s
+r-ggpubr                                             2.1MB @ 663.7kB/s  0.5s
+snappy                                              42.3kB @  13.4kB/s  0.1s
+r-pbkrtest                                         195.4kB @  60.6kB/s  0.1s
+bioconductor-vsn                                     2.2MB @ 664.0kB/s  0.3s
+aws-c-auth                                         105.9kB @  31.8kB/s  0.2s
+aws-crt-cpp                                        340.3kB @ 101.2kB/s  0.2s
+r-dendextend                                         3.7MB @   1.0MB/s  0.5s
+
+Downloading and Extracting Packages
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(DGE_analysis) -bash-4.2$ logout
+Connection to atlas-edr.sw.ehu.es closed.
+❯ sshal
+Last login: Mon Jun 10 09:25:12 2024 from 192.168.11.254
+
+                                        WELCOME TO DIPC
+
+Please, do not forget to read cluster manuals at https://scc.dipc.org/docs/ before submitting jobs.
+
+
+                   Cluster ATLAS EDR - RAM: 16TB - SCRATCH: 200 TB
+                   Nodes powered by NVIDIA Tesla P40 GPGPUs
+                   2656 cores - 54 nodes. Operating System: CentOS Linux release 7.4.1708
+                   Kernel 3.10.0-693.el7.x86_64
+
+
+atlas-edr-login-01> ls -la
+total 85
+drwx------ 1 heral biogipuzkoa    44 jun  9 20:19 .
+drwxr-xr-x 1 root  root          694 jun 10 09:45 ..
+-rw------- 1 heral biogipuzkoa 22886 jun 10 11:14 .bash_history
+-rw------- 1 heral biogipuzkoa   498 may  5 21:31 .bashrc
+-rw------- 1 heral biogipuzkoa   464 abr 24 10:22 .bashrc~
+drwxr-x--x 1 heral biogipuzkoa     0 may 30  2000 bin
+drwxr-x--x 1 heral biogipuzkoa     8 may 21 16:14 bioinfo
+drwx------ 1 heral biogipuzkoa     7 may 24 13:12 .cache
+drwxrwsr-x 1 heral biogipuzkoa     3 abr  9 10:50 .conda
+-rw------- 1 heral biogipuzkoa    52 sep  5  2023 .condarc
+drwx------ 1 heral biogipuzkoa     3 abr 24 10:23 .config
+drwxr-x--x 1 heral biogipuzkoa    15 feb  5 09:19 containers
+-rwxr-xr-x 1 heral biogipuzkoa  1870 may 30  2000 .cshrc
+drwx------ 1 heral biogipuzkoa     1 may 10 09:32 .dotnet
+drwxrwx--- 1 heral biogipuzkoa    13 may 24 10:13 exps
+-rw------- 1 heral biogipuzkoa    85 may 24 10:17 .gitconfig
+-rwxr-xr-x 1 heral biogipuzkoa    37 may 30  2000 .history
+drwx------ 1 heral biogipuzkoa     6 may  3 09:03 HPC
+drwxr-x--x 1 heral biogipuzkoa     3 abr 24 10:19 htop
+drwxr-x--x 1 heral biogipuzkoa     7 abr 24 10:59 indexes
+drwx------ 1 heral biogipuzkoa     1 sep 11  2023 .java
+drwx------ 1 heral biogipuzkoa     2 sep  8  2023 .local
+-rwxr-xr-x 1 heral biogipuzkoa   375 may 30  2000 .logout
+-rwxr-xr-x 1 heral biogipuzkoa 13249 may 30  2000 .lynxrc
+-rwxr-xr-x 1 heral biogipuzkoa   642 may 30  2000 .machines_mine
+-rwxr-xr-x 1 heral biogipuzkoa   533 may 30  2000 .mailrc
+-rwxr-xr-x 1 heral biogipuzkoa  7881 may 30  2000 .muttrc
+drwx------ 1 heral biogipuzkoa     1 abr 11 18:25 .ncbi
+drwx------ 1 heral biogipuzkoa     5 may 22 22:28 .nextflow
+drwx------ 1 heral biogipuzkoa     3 may 24 13:12 .npm
+drwx------ 1 heral biogipuzkoa     1 sep 11  2023 .pki
+-rwxr-xr-x 1 heral biogipuzkoa  2030 may  5  2023 .profile
+-rw------- 1 heral biogipuzkoa   519 abr 30 16:40 .python_history
+drwx------ 1 heral biogipuzkoa     1 dic 19 12:23 .singularity
+drwx------ 1 heral biogipuzkoa     8 ene  3 10:43 .ssh
+-rwxr-xr-x 1 heral biogipuzkoa   397 may 30  2000 .startuprc
+-rwxr-xr-x 1 heral biogipuzkoa  2308 may 30  2000 .tcsh_alias
+-rwxr-xr-x 1 heral biogipuzkoa  4312 may 30  2000 .tcsh_completion
+-rwxr-xr-x 1 heral biogipuzkoa  4180 nov  7  2007 .tcshrc
+drwxr-x--x 1 heral biogipuzkoa    17 jun  7 14:10 tools
+drwx------ 1 heral biogipuzkoa     9 jun  8 16:49 trabajo-final-bioinformatics
+-rw------- 1 heral biogipuzkoa  8905 jun  9 20:19 .viminfo
+-rwxr-xr-x 1 heral biogipuzkoa  4576 sep 20  2005 .vimrc
+drwx------ 1 heral biogipuzkoa    12 jun 10 11:03 .vscode-server
+-rwxr-xr-x 1 heral biogipuzkoa  3690 may 30  2000 .wgetrc
+-rwxr-xr-x 1 heral biogipuzkoa  1141 may 30  2000 .Xdefaults
+atlas-edr-login-01> chmod 770 .
+atlas-edr-login-01> chmod -R 770 tools/
+^C
+atlas-edr-login-01> chmod  770 tools/
+atlas-edr-login-01> chmod  770 tools/*
+atlas-edr-login-01> chmod  770 tools/**/*
+atlas-edr-login-01> chmod 700 .
+atlas-edr-login-01> ls
+bin      containers  HPC   indexes  trabajo-final-bioinformatics
+bioinfo  exps        htop  tools
+atlas-edr-login-01> logout
+Connection to atlas-edr.sw.ehu.es closed.
+❯ sshbla
+Last login: Mon Jun 10 11:27:26 2024 from 192.168.11.254
+
+                                        WELCOME TO DIPC
+
+Please, do not forget to read cluster manuals at https://scc.dipc.org/docs/ before submitting jobs.
+
+
+                   Cluster ATLAS EDR - RAM: 16TB - SCRATCH: 200 TB
+                   Nodes powered by NVIDIA Tesla P40 GPGPUs
+                   2656 cores - 54 nodes. Operating System: CentOS Linux release
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"env.yaml" 602L, 20764C
+name: /scratch/blazqul/envs/DGE_analysis
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=2_gnu
+  - _r-mutex=1.0.1=anacondar_1
+  - anyio=4.3.0=pyhd8ed1ab_0
+  - argcomplete=3.3.0=pyhd8ed1ab_0
+  - argon2-cffi=23.1.0=pyhd8ed1ab_0
+  - argon2-cffi-bindings=21.2.0=py310h2372a71_4
+  - arrow=1.3.0=pyhd8ed1ab_0
+  - asttokens=2.4.1=pyhd8ed1ab_0
+  - async-lru=2.0.4=pyhd8ed1ab_0
+  - attrs=23.2.0=pyh71513ae_0
+  - aws-c-auth=0.7.20=h5f1c8d9_0
+  - aws-c-cal=0.6.12=h2ba76a8_0
+  - aws-c-common=0.9.17=h4ab18f5_0
+  - aws-c-compression=0.2.18=h36a0aea_4
+  - aws-c-event-stream=0.4.2=h161de36_10
+  - aws-c-http=0.8.1=h63f54a0_13
+  - aws-c-io=0.14.8=h96d4d28_0
+"env.yaml" 602L, 20764C
